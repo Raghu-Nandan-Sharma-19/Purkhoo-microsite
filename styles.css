@@ -92,12 +92,13 @@ header nav a:hover {
 }
 .visit {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: center;
     padding: 20px;
 
 }
-
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -127,8 +128,13 @@ header nav a:hover {
         max-width: 45%;
     }
     .visit {
-        flex: 1 1 100%;
-        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        padding: 20px;
+    
     }
 }
 
@@ -137,13 +143,18 @@ header nav a:hover {
         flex: 1 1 100%;
         max-width: 100%;
     }
-    .visit {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
 
     .gallery img {
         max-width: 100%;
+    }
+    .visit {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        padding: 20px;
+    
     }
 }
 
@@ -153,6 +164,12 @@ header nav a:hover {
         max-width: 400px; /* Increased width for buttons on desktop */
     }
     .visit {
-        max-width: 800px; /* Increased width for visit section on desktop */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        padding: 20px;
+    
     }
 }
