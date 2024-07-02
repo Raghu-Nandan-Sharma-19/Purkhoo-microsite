@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    background-color: salmon;
+    border-radius: 5px;
+}
+
+header nav a:hover {
+    background-color: #2E7D32;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.button {
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    flex: 1 1 200px;
+    max-width: 250px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.button span {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.history {
+    background-image: url('history.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Increased height for history button */
+    background-color: #007BFF; /* Attractive blue color for history button */
+}
+
+.nearby {
+    background-image: url('nearby.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Increased height for nearby button */
+    background-color: #00BFFF; /* Attractive sky blue color for nearby button */
+}
+
+.education {
+    background-image: url('education.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Increased height for education button */
+    background-color: #1E90FF; /* Attractive dodger blue color for education button */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover for all buttons */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery img {
+    margin: 10px;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.content {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .button {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .button {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .gallery img {
+        max-width: 100%;
+    }
+}
+
+/* Media Query for Larger Screens */
+@media (min-width: 1024px) {
+    .history, .nearby, .education {
+        max-width: 400px; /* Increased width for buttons on desktop */
+    }
+}
