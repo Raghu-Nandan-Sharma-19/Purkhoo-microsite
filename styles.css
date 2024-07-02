@@ -90,6 +90,13 @@ header nav a:hover {
 .button:hover {
     background-color: #0056b3; /* Darker blue on hover for all buttons */
 }
+.visit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+
+}
 
 .gallery {
     display: flex;
