@@ -147,15 +147,6 @@ header nav a:hover {
     .gallery img {
         max-width: 100%;
     }
-    .visit {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-        padding: 20px;
-    
-    }
 }
 
 /* Media Query for Larger Screens */
